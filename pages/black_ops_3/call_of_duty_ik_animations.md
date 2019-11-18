@@ -21,7 +21,7 @@ You can tell if it is an IK animation if:
 
 * Hands are straightened out
 * One arm stays in the bind pose
-* The arms are animated but move around a wierd pose
+* The arms are animated but move around a weird pose
 
 Usually these IK anims only show up in Infinite Warfare and up.
 
@@ -30,10 +30,10 @@ These anims could be:
 * Grip
 * Walk
 * Sprint, Super Sprint & Sprint Offsets
-* Empty Addatives
-* ADS Addatives
+* Empty Additives
+* ADS Additives
 
-Now we have decided what animations we need to apply this for we can get to work. There are three different methods for different situations. One is for the Grip IK anims, the other is for IK anims that can offset or not offset the shoulder and the last is a combination of the second method and using IK handles. As you can see IK anims are nothing but addative anims with extra steps, no wonder they're used so much!
+Now we have decided what animations we need to apply this for we can get to work. There are three different methods for different situations. One is for the Grip IK anims, the other is for IK anims that can offset or not offset the shoulder and the last is a combination of the second method and using IK handles. As you can see IK anims are nothing but additive anims with extra steps, no wonder they're used so much!
 
 ## Grip IK Animations
 
@@ -81,19 +81,19 @@ This is what the `reload_end` animation looks for the weapon I'm working with:
 
 ## Normal IK Animations
 
-Do the same thing as before and import the weapon onto a set of viewhands. In my case, I'm going to be using the IW Stallion .44 ADS addative animation (This would then be used to blend in the sprints so the hand goes into the correct pose, just like ingame).
+Do the same thing as before and import the weapon onto a set of viewhands. In my case, I'm going to be using the IW Stallion .44 ADS additive animation (This would then be used to blend in the sprints so the hand goes into the correct pose, just like ingame).
 
 Then Import the IK animation. Mine looks like this:
 
 
-![.44 Stallion ADS Addative IK Anim](https://i.imgur.com/qR2bTY7.jpg)
+![.44 Stallion ADS Additive IK Anim](https://i.imgur.com/qR2bTY7.jpg)
 
 Then select and copy all of the frames and remember the frame count. In my case the animation ends on the ninth frame. Now, import idle, select all of the joints, and create an anim layer using the same method as before. Then, with all the frames still selected and the anim layer selected, paste in the frames you copied before.
 
 This is what my final result looks like:
 
 
-![.44 Stallion ADS Addative IK Anim Done](https://i.imgur.com/z2mspGL.gif)
+![.44 Stallion ADS Additive IK Anim Done](https://i.imgur.com/z2mspGL.gif)
 ## Advanced IK Animations
 
 {% include warning.html content="You will definately need alot of experience with Maya and be comfortable with animation layers to be able to follow this guide. If you are struggling with either of these, look up an animation layer tutorial online." %}
